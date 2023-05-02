@@ -16,7 +16,7 @@ size=2*halfsize+1;
 for i=1:size
     for j=1:size
         u=[i-halfsize-1 j-halfsize-1];
-        hx(i,j)=gauss(u(1),sigma)*dgauss(u(2),sigma);
+        hx(i,j)=gauss(u(1),sigma)*dgauss(u(2),sigma);^M
     end
 end
 hx=hx/sqrt(sum(sum(abs(hx).*abs(hx))));
